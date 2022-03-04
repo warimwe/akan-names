@@ -13,8 +13,8 @@
     />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
-  <body>
-    <div class="row all">
+  <body class="all">
+    <div>
       <div class="proudly m-3 text-center"><p>Proudly African</p></div>
       <div class="intro m-4">
         <p>
@@ -28,13 +28,16 @@
           <em>Akan</em> name. Enter your birthday details below and be amazed:
         </p>
       </div>
-      <div class="ghana-image">
+    </div>
+    <div class="row">
+      <div class="ghana-image col-6">
         <img
           src="https://images.pexels.com/photos/4176695/pexels-photo-4176695.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
           alt=""
         />
       </div>
-      <div class="form">
+
+      <div class="form col-6">
         <form action="">
           <div class="mb-3">
             <label for="dayOfBirth" class="form-label">Day</label>
@@ -47,6 +50,24 @@
           <div class="mb-3">
             <label for="yearOfBirth" class="form-label">Year</label>
             <input type="number" class="form-control" id="yearOfBirth" />
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="gender"
+              id="genderFemale"
+            />
+            <label class="form-check-label" for="genderFemale"> Female </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="gender"
+              id="genderMale"
+            />
+            <label class="form-check-label" for="genderMale"> Male </label>
           </div>
         </form>
       </div>
