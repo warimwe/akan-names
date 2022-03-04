@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Poppins:wght@300;400&display=swap");
 .all {
-  background-color: #0a0a0a;
+  background-color: #1a0d0d;
   color: azure;
   font-family: "Poppins", sans-serif;
 }
@@ -17,5 +17,8 @@
   height: 50%;
   align-self: center;
 }
-.input {
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
