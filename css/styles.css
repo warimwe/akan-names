@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap");
+
 .all {
   background-color: #0a0a0a;
 }
@@ -6,4 +8,7 @@
   color: azure;
 }
 .proudly {
+  font-size: x-large;
+  font-family: "Dancing Script", cursive;
+  font-weight: 600;
 }
