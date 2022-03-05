@@ -45,4 +45,10 @@ function checkAkanName() {
       alert("Invalid day, try again");
     }
   }
+
+  var date = yearOfBirth + "-" + monthOfBirth + "-" + dayOfBirth;
+
+  var d = new Date(date);
+
+  var day = d.getDay();
 }
