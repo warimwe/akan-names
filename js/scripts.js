@@ -51,4 +51,18 @@ function checkAkanName() {
   var d = new Date(date);
 
   var day = d.getDay();
+
+  if (gender === "male") {
+    document.getElementById("user_akan").innerText =
+      "You were born on a " +
+      weekDays[day] +
+      ". Your Akan name is " +
+      maleAkanNames[day];
+  } else {
+    document.getElementById("user_akan").innerText =
+      "You were born on a " +
+      weekDays[day] +
+      ". Your Akan name is " +
+      femaleAkanNames[day];
+  }
 }
