@@ -32,4 +32,17 @@ function checkAkanName() {
     "Afua",
     "Ama",
   ];
+
+  //document.getElementById("form_id")
+
+  if (monthOfBirth <= 0 || monthOfBirth > 12) {
+    // month is incorrect
+    alert("Invalid month, try again");
+  } else {
+    // month is correct
+    // check if day is correct
+    if (dayOfBirth <= 0 || dayOfBirth > 31) {
+      alert("Invalid day, try again");
+    }
+  }
 }
