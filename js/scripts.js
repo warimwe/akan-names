@@ -51,25 +51,31 @@ function checkAkanName() {
         alert("Invalid day, try again");
       }
     }
+    getAkan();
   }
 
-  var date = yearOfBirth + "-" + monthOfBirth + "-" + dayOfBirth;
+  function getAkan() {
+    var date = yearOfBirth + "-" + monthOfBirth + "-" + dayOfBirth;
 
-  var d = new Date(date);
+    var d = new Date(date);
 
-  var day = d.getDay();
+    var day = d.getDay();
 
-  if (gender === "male") {
-    document.getElementById("user_akan").innerText =
-      "You were born on a " +
-      weekDays[day] +
-      ". Your Akan name is " +
-      maleAkanNames[day];
-  } else {
-    document.getElementById("user_akan").innerText =
-      "You were born on a " +
-      weekDays[day] +
-      ". Your Akan name is " +
-      femaleAkanNames[day];
+    if (gender === "male") {
+      document.getElementById("user_akan").innerText =
+        "You were born on a " +
+        weekDays[day] +
+        ". Your Akan name is " +
+        maleAkanNames[day];
+    } else {
+      document.getElementById("user_akan").innerText =
+        "You were born on a " +
+        weekDays[day] +
+        ". Your Akan name is " +
+        femaleAkanNames[day];
+    }
   }
+}
+function resetForm() {
+  document.getElementById("user_akan").innerText = "";
 }

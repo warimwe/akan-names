@@ -17,7 +17,7 @@
   <body class="all">
     <div class="container pt-md-5">
       <div>
-        <div class="proudly m-3 mt-5 text-center text-warning">
+        <div class="proudly m-3 mt-5 text-center">
           <p>Proudly African</p>
         </div>
         <div class="intro m-4">
@@ -47,14 +47,14 @@
         </div>
       </div>
       <div class="row">
-        <div class="ghana-image col-6">
+        <div class="ghana-image col-12 col-md-6 mb-5 mb-md-0">
           <img
             src="https://images.pexels.com/photos/4176695/pexels-photo-4176695.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
             alt=""
           />
         </div>
 
-        <div class="form col-6">
+        <div class="form col-12 col-md-6">
           <form
             name="date_form"
             onsubmit="event.preventDefault(); checkAkanName()"
@@ -112,7 +112,13 @@
             <button type="submit" class="btn btn-primary">
               Check <em>Akan</em> Name
             </button>
-            <button type="reset" class="btn btn-warning mx-5">Reset</button>
+            <button
+              type="reset"
+              onclick="resetForm()"
+              class="btn btn-warning mx-5"
+            >
+              Reset
+            </button>
             <p id="user_akan" class="py-3"></p>
           </form>
         </div>
